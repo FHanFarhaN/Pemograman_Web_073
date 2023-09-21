@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        console.log("Hello World from head!");
+        </script>
+
+        window.alert("Hello World")
+    <meta charset="UTF-8">
+    <title>Resep dan Masakan</title>
+    <style>
+
+        /* Gaya CSS bisa ditambahkan di sini */
+        /* Gaya untuk elemen header */
+header {
+    background-color: #3633ff70;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Gaya untuk judul */
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Gaya untuk deskripsi header */
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Gaya untuk menu navigasi */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Gaya untuk bagian resep */
+section {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Gaya untuk gambar */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Gaya untuk tabel resep */
+table {
+    width: 100%;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+/* Gaya untuk formulir kontak */
+form {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #DDD;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.427);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Gaya untuk tombol */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #3355ff68;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Gaya untuk checkbox */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <marquee>Resep Masakan Enak By Fadil Store</marquee></h1>
+        <p>Selamat datang di situs web kami yang berisi berbagai resep masakan lezat!</p>
+    </header>
+    
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Resep Makanan</a></li>
+            <li><a href="#">Resep Minuman</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Resep Ayam Goreng</h2>
+        <img src="1.jpg" alt="Ayam Goreng" width="300" height="200"><br>
+        <p>Ini adalah resep ayam goreng yang lezat dan gurih. Berikut bahan-bahan dan langkah-langkahnya:</p>
+        
+        <table>
+            <tr>
+                <th>Bahan-bahan:</th>
+                <th>Langkah-langkah:</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>500 gram ayam potong</li>
+                        <li>Tepung terigu</li>
+                        <li>Garam</li>
+                        <li>Merica</li>
+                    </ul>
+                </td>
+                <td>
+                    <ol>
+                        <li>Lumuri ayam dengan garam dan merica.</li>
+                        <li>Gulingkan ayam dalam tepung terigu hingga rata.</li>
+                        <li>Goreng ayam hingga kecokelatan.</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Resep Es Teh Manis</h2>
+        <img src="3.jpg" alt="Es Teh Manis"><br>
+        <p>Minuman segar yang cocok untuk cuaca panas. Berikut bahan-bahan dan langkah-langkahnya:</p>
+        
+        <table>
+            <tr>
+                <th>Bahan-bahan:</th>
+                <th>Langkah-langkah:</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Teh celup</li>
+                        <li>Gula</li>
+                        <li>Es batu</li>
+                        <li>Jeruk</li>
+                    </ul>
+                </td>
+                <td>
+                    <ol>
+                        <li>Seduh teh celup dengan air panas.</li>
+                        <li>Tambahkan gula sesuai selera.</li>
+                        <li>Tambahkan es batu dan irisan jeruk.</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </section>
+        <h2>Formulir Kontak</h2>
+        <form>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br>
+
+            <label for="Alamat">Alamat:</label>
+            <input type="text" id="Alamat" name="Alamat"><br>
+
+            <input type="radio" id="jenisKelamin" name="jenisKelamin" value="pria">
+            <label for="jenisKelamin">Pria</label><br>
+
+            <input type="radio" id="jenisKelamin" name="jenisKelamin" value="wanita">
+            <label for="jenisKelamin">Wanita</label><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br>
+
+            <input type="checkbox" id="setuju" name="setuju" value="setuju">
+            <label for="setuju">Saya setuju dengan syarat dan ketentuan.</label><br>
+
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+
+    <footer>
+        <p>Hak Cipta &copy; 2023 Resep dan Masakan By Fadil Store</p>
+    </footer>
+</body>
+</html>
